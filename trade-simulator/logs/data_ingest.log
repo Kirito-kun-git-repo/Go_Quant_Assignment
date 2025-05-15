@@ -1,0 +1,19 @@
+2025-05-15 15:32:36,085 - __main__ - INFO - Starting data ingestion service
+2025-05-15 15:32:36,085 - __main__ - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-15 15:32:36,560 - __main__ - INFO - Connection established
+2025-05-15 15:33:16,718 - __main__ - WARNING - Connection closed: sent 1011 (internal error) keepalive ping timeout; no close frame received. Attempt 1/10
+2025-05-15 15:33:16,718 - __main__ - INFO - Reconnecting in 2.86 seconds (attempt 1/10)
+2025-05-15 15:33:19,580 - __main__ - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-15 15:33:20,087 - __main__ - INFO - Connection established
+2025-05-15 15:34:00,312 - __main__ - WARNING - Connection closed: sent 1011 (internal error) keepalive ping timeout; no close frame received. Attempt 1/10
+2025-05-15 15:34:00,313 - __main__ - INFO - Reconnecting in 2.66 seconds (attempt 1/10)
+2025-05-15 15:34:02,976 - __main__ - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-15 15:34:03,455 - __main__ - INFO - Connection established
+2025-05-15 15:34:43,596 - __main__ - WARNING - Connection closed: sent 1011 (internal error) keepalive ping timeout; no close frame received. Attempt 1/10
+2025-05-15 15:34:43,597 - __main__ - INFO - Reconnecting in 2.34 seconds (attempt 1/10)
+2025-05-15 15:34:45,943 - __main__ - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-15 15:34:46,777 - __main__ - INFO - Connection established
+2025-05-15 15:35:26,943 - __main__ - WARNING - Connection closed: sent 1011 (internal error) keepalive ping timeout; no close frame received. Attempt 1/10
+2025-05-15 15:35:26,944 - __main__ - INFO - Reconnecting in 2.76 seconds (attempt 1/10)
+2025-05-15 15:35:29,707 - __main__ - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-15 15:35:30,226 - __main__ - INFO - Connection established

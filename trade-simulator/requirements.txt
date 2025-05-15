@@ -1,0 +1,7 @@
+asyncio
+websockets
+numpy
+pandas
+scikit-learn
+PySimpleGUI
+pytest

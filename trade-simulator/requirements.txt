@@ -3,5 +3,9 @@ websockets
 numpy
 pandas
 scikit-learn
-PySimpleGUI
+PySimpleGUI>=5.0.10
 pytest
+joblib
+matplotlib
+jupyter
+typing

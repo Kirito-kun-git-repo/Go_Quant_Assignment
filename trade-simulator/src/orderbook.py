@@ -173,14 +173,22 @@ class OrderBook:
     def rolling_volatility(self) -> Optional[float]:
         """
         Calculate the rolling volatility based on the mid price history.
+        Uses returns (percentage changes) instead of raw prices for more accurate volatility.
         
         Returns:
-            float or None: The standard deviation of mid prices, or None if not enough data
+            float or None: The standard deviation of price returns, or None if not enough data
         """
         if len(self.mid_prices) < 2:
             return None
         
-        return np.std(list(self.mid_prices))
+        # Convert to numpy array for vectorized operations
+        prices = np.array(list(self.mid_prices))
+        
+        # Calculate returns (percentage changes)
+        returns = np.diff(prices) / prices[:-1]
+        
+        # Calculate standard deviation of returns
+        return np.std(returns) * np.sqrt(len(returns))
     
     def depth(self, levels: int = 5) -> Tuple[List[List[float]], List[List[float]]]:
         """

@@ -164,7 +164,7 @@ async def fetch_market_data(window: sg.Window) -> None:
             
             # Simulate price movement with random walk
             vol = volatility.get(symbol, 50.0)
-            price_change = np.random.normal(0, vol * 0.01)  # Random walk with 1% of volatility
+            price_change = np.random.normal(0, vol * 0.05)  # Random walk with 5% of volatility (increased from 1%)
             current_price += price_change
             
             # Ensure price doesn't go too far from base price (mean reversion)
@@ -268,8 +268,10 @@ def update_market_data_display(window: sg.Window, snapshot: Dict[str, Any]) -> N
     window['-SPREAD-'].update(f'Spread: ${spread:.2f}')
     
     # Format volatility as percentage if available
-    if volatility is not None and mid_price:
-        vol_pct = volatility / mid_price * 100
+    if volatility is not None:
+        # Volatility is already in percentage form (as a decimal) from our updated calculation
+        # Multiply by 100 to display as percentage
+        vol_pct = volatility * 100
         window['-VOL-DISPLAY-'].update(f'Volatility: {vol_pct:.2f}%')
     else:
         window['-VOL-DISPLAY-'].update('Volatility: N/A')
